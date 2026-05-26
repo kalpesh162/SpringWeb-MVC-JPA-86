@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Tue May 26 15:56:43 IST 2026
-org.eclipse.jst.jee.server\:/binary\:E\:\\JPA86-SpringWebMVC\\SpringWebMVC-1\\src\\main\\webapp\\WEB-INF\\lib\\spring-web-5.2.9.RELEASE.jar=WEB-INF/lib/spring-web-5.2.9.RELEASE.jar
-org.eclipse.jst.jee.server\:/binary\:E\:\\JPA86-SpringWebMVC\\StudentProj1\\src\\main\\webapp\\WEB-INF\\lib\\spring-web-5.2.9.RELEASE.jar=WEB-INF/lib/spring-web-5.2.9.RELEASE.jar
+#Tue May 26 16:47:46 IST 2026
+org.eclipse.jst.jee.server\:/binary\:E\:\\JPA86-SpringWebMVC\\StudentProj2\\src\\main\\webapp\\WEB-INF\\lib\\spring-web-5.2.9.RELEASE.jar=WEB-INF/lib/spring-web-5.2.9.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:E\:\\JPA86-SpringWebMVC\\StudentProj3\\src\\main\\webapp\\WEB-INF\\lib\\spring-web-5.2.9.RELEASE.jar=WEB-INF/lib/spring-web-5.2.9.RELEASE.jar

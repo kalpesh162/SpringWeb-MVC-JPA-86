@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="E:\JPA86-SpringWebMVC\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="E:\JPA86-SpringWebMVC\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\SpringWebMVC-1" path="/SpringWebMVC-1" reloadable="true" source="org.eclipse.jst.jee.server:SpringWebMVC-1"/><Context docBase="E:\JPA86-SpringWebMVC\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\StudentProj1" path="/StudentProj1" reloadable="true" source="org.eclipse.jst.jee.server:StudentProj1"/></Host>
+      <Context docBase="E:\JPA86-SpringWebMVC\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="E:\JPA86-SpringWebMVC\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\StudentProj2" path="/StudentProj2" reloadable="true" source="org.eclipse.jst.jee.server:StudentProj2"/><Context docBase="E:\JPA86-SpringWebMVC\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\StudentProj3" path="/StudentProj3" reloadable="true" source="org.eclipse.jst.jee.server:StudentProj3"/></Host>
     </Engine>
   </Service>
 </Server>
