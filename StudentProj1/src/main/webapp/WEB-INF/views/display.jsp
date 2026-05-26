@@ -7,6 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h1>
+  ID : ${studid}  <br>
+  Name: ${studname} <br>
+  Marks: ${studmarks} <br>
 
+</h1>
 </body>
 </html>
