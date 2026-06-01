@@ -1,6 +1,5 @@
 package com.controller;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;

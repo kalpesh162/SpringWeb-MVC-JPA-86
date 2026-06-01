@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form:form action="show" method="post" modelAttribute="stud">
+	<form:form action="save" method="post" modelAttribute="stud">
  
  	ID :  <form:input path="id" />
 		<br>
@@ -17,7 +17,7 @@
  	Marks :  <form:input path="marks" />
 		<br>
 
-		<input type="submit" value="SHOW">
+		<input type="submit" value="SAVE">
 
 	</form:form>
 
