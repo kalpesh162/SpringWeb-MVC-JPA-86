@@ -8,7 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>ALL BOOKS</title>
-<link rel="stylesheet" type="text/css" href="css/table.css">
+<link href="<c:url value='/css/table.css'/>" rel="stylesheet">
 </head>
 <body>
 
@@ -25,13 +25,10 @@
 			<tr>
 				<td>${student.id}</td>
 				<td>${student.name}</td>
-				<td>${student.marks}</td>	
-				<td>
-					<form action="deleteBook" method="get" style="margin: 0;">
-						<input type="hidden" name="id" value="${book.id}">
-						<button type="submit" class="btn btn-delete">Delete</button>
-					</form>
-				</td>
+				<td>${student.marks}</td>
+
+				<td><a href="delete/${student.id}">DELETE</a></td>
+
 
 				<td>
 					<form action="updateFormBookServlet" method="get"

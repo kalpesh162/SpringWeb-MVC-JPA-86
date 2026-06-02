@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -41,7 +42,8 @@ public class StudentController {
 		if (noOfRecords < 0)
 			return "error";
 
-		return "display";
+		// return "display"; // /read return "redirect:/read"
+		return "redirect:/read";
 	}
 
 	@RequestMapping("/read")
@@ -50,6 +52,18 @@ public class StudentController {
 		model.addAttribute("studlist", list);
 		System.out.println(list);
 		return "records";
+	}
+
+	// http://localhost:8080/SpringMVCStudentApp-1/delete/2
+	@RequestMapping("/delete/{id}")
+	public String deleteStudent(@PathVariable("id") int id) {
+
+		int res = dao.deleteStudentById(id);
+
+		if (res <= 0)
+			return "error";
+
+		return "redirect:/read";
 	}
 
 }

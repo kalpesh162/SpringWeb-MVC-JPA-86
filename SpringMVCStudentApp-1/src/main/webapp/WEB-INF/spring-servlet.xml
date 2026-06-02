@@ -40,6 +40,8 @@
 	<bean id="dao" class="com.dao.StudentDao">
 		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
 	</bean>
+	
+	<mvc:resources mapping="/css/**" location="/css/" />	
 
 
 </beans>
