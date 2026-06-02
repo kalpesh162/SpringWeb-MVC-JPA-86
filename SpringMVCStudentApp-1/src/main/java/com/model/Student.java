@@ -8,7 +8,7 @@ public class Student implements Serializable {
 	private double marks;
 
 	public Student() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public Student(int id, String name, double marks) {
