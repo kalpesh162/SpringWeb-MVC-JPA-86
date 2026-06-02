@@ -49,7 +49,7 @@ public class StudentController {
 		List<Student> list = dao.findAllStudents();
 		model.addAttribute("studlist", list);
 		System.out.println(list);
-		return "display";
+		return "records";
 	}
 
 }
