@@ -1,5 +1,8 @@
 package com.controller;
 
+import java.awt.Dialog;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,33 +15,41 @@ import com.model.Student;
 
 @Controller
 public class StudentController {
-	
+
 	@Autowired
 	private StudentDao dao;
-	
-    // http://localhost:8080/SpringMVCStudApp-1/
+
+	// http://localhost:8080/SpringMVCStudApp-1/
 	@RequestMapping("/")
 	public String welcome() {
 		return "index";
 	}
-	
+
 	@RequestMapping("/open")
 	public String openForm(Model model) {
-		
+
 		model.addAttribute("stud", new Student());
 		return "studform";
 	}
-	
-	@RequestMapping(value = "/save",method = RequestMethod.POST)
-	public String saveStudent(@ModelAttribute("stud")Student student) {
+
+	@RequestMapping(value = "/save", method = RequestMethod.POST)
+	public String saveStudent(@ModelAttribute("stud") Student student) {
 		System.out.println(student);
 		// save to db
-		int noOfRecords=dao.saveStudent(student);
-		
-		if(noOfRecords<0)
+		int noOfRecords = dao.saveStudent(student);
+
+		if (noOfRecords < 0)
 			return "error";
-		
+
 		return "display";
 	}
-	
+
+	@RequestMapping("/read")
+	public String showAllStudents(Model model) {
+		List<Student> list = dao.findAllStudents();
+		model.addAttribute("studlist", list);
+		System.out.println(list);
+		return "display";
+	}
+
 }
