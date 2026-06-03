@@ -47,4 +47,9 @@ public class StudentDao {
 
 	}
 
+	public Student findStudentById(int id) {
+		String sql="SELECT * FROM STUDENT WHERE id=?";
+		return jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<Student>(Student.class),id);
+	}
+	
 }

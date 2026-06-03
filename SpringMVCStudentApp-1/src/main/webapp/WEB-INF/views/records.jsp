@@ -30,13 +30,9 @@
 				<td><a href="delete/${student.id}">DELETE</a></td>
 
 
-				<td>
-					<form action="updateFormBookServlet" method="get"
-						style="margin: 0;">
-						<input type="hidden" name="id" value="${book.id}">
-						<button type="submit" class="btn btn-update">Update</button>
-					</form>
-				</td>
+			
+				<td><a href="updateform/${student.id}">UPDATE</a></td>
+			
 
 			</tr>
 		</c:forEach>

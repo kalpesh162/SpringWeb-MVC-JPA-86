@@ -65,4 +65,22 @@ public class StudentController {
 		return "redirect:/read";
 	}
 
+	@RequestMapping("/updateform/{id}")
+	public String updateForm(@PathVariable("id") int id, Model model) {
+		// fetch Student By Id --> Student
+		Student student = dao.findStudentById(id);
+		System.out.println("Update  " + student);
+		model.addAttribute("stud", student);
+		return "updateform";
+	}
+
+	@RequestMapping(value = "/update",method = RequestMethod.POST)
+	public String updateStudent(@ModelAttribute("stud") Student student) {
+		int noOfRows = dao.updateStudent(student);
+		if (noOfRows <= 0)
+			return "error";
+		return "redirect:/read";
+
+	}
+
 }
